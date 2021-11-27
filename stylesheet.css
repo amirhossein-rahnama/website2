@@ -1,0 +1,33 @@
+hr {color:sienna;}
+p {color:white;}
+h1 {color:white;}
+h2 {color:white;}
+h3 {color:white;}
+a {
+color:red;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: 	rgb(219,112,147);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: khaki;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: yellow;
+font-size:200%;
+}

@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    type: <input type="text" name="" id="kon"> text: <input type="text" name="" id="jon">
+    <div id="results"></div>
+    <button id="btn">submit</button>
+    <script>
+        var x = document.getElementById("kon").value;
+        var oh = document.getElementById("jon").value;
+
+        function addele() {
+
+            var newel = document.createElement();
+            var txt = document.createTextNode('<' + x + '>' + oh + '</' + x + '>');
+
+            newel.appendChild(txt);
+            var bdy = document.getElementsByTagName('body')[0];
+            bdy.lastChild.appendChild(newel);
+        }
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", addele, false);
+    </script>
+</body>
+
+</html>
